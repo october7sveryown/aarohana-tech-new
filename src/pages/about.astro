@@ -1,0 +1,226 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'About us',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="About us"
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title">
+      Grow your online presence with <br />
+      <span class="text-primary dark:text-white highlight">Aarohana Technologies</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      At Aarohana Technologies, we specialize in propelling your online presence to new heights. Our expert team offers comprehensive digital solutions, including cutting-edge web development, impactful social media strategies, and top-notch SEO services. By leveraging the latest technology and industry best practices, we ensure your brand stands out in the crowded digital landscape. Whether you're a startup looking to establish a strong online footprint or an established business aiming to enhance your digital reach, Aarohana Technologies is your go-to partner for sustained online growth. Join us and transform your online presence today!
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Statistics about us"
+    stats={[
+      { title: 'Years of Experience', amount: '5+' },
+      { title: 'Based in', amount: '🇨🇦' },
+      { title: 'Operating', amount: 'Globally' },
+      { title: 'Established in', amount: '2023' },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <!-- <Features3
+    title="Our templates"
+    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Educational',
+        description:
+          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Interior Design',
+        description:
+          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Photography',
+        description:
+          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+        icon: 'tabler:template',
+      },
+    ]}
+  /> -->
+
+  <!-- Features3 Widget ************** -->
+
+  <!-- <Features3
+    columns={3}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'E-commerce',
+        description:
+          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Blog',
+        description:
+          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Business',
+        description:
+          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Branding',
+        description:
+          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Medical',
+        description:
+          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Fashion Design',
+        description:
+          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+        icon: 'tabler:template',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Colorful Image',
+    }}
+  /> -->
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Our values"
+    subtitle="At Aarohana Technologies, our core values guide everything we do, ensuring that we consistently deliver exceptional results and build lasting relationships."
+    items={[
+      {
+        title: 'Customer-centric approach',
+        description:
+          'We prioritize our clients above all else. By deeply understanding their needs and aspirations, we provide tailored solutions that drive success. Our customer-centric approach ensures that we exceed expectations, delivering unparalleled service and fostering strong partnerships.',
+      },
+      {
+        title: 'Constant Improvement',
+        description:
+          'Innovation is at the heart of Aarohana Technologies. We are committed to constant improvement, always seeking new ways to enhance our offerings and stay ahead of industry trends. By embracing change and fostering a culture of continuous learning, we ensure that our clients benefit from cutting-edge solutions and industry-leading expertise.',
+      },
+      {
+        title: 'Ethical Practices',
+        description:
+          'Integrity and transparency are fundamental to our operations. We adhere to the highest ethical standards, ensuring that our business practices are fair, responsible, and sustainable. By maintaining trust and accountability in all our interactions, we build a foundation of reliability and respect with our clients, partners, and community.',
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <!-- <Steps2
+    title="Achievements"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    isReversed={true}
+    callToAction={{
+      text: 'See more',
+      href: '/',
+    }}
+    items={[
+      {
+        title: 'Global reach',
+        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        icon: 'tabler:globe',
+      },
+      {
+        title: 'Positive customer feedback and reviews',
+        description:
+          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+        icon: 'tabler:message-star',
+      },
+      {
+        title: 'Awards and recognition as industry experts',
+        description:
+          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+        icon: 'tabler:award',
+      },
+    ]}
+  /> -->
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- <Features2
+    title="Our locations"
+    tagline="Find us"
+    columns={1}
+    items={[
+      // {
+      //   title: 'EE.UU',
+      //   description: '1234 Lorem Ipsum St, 12345, Miami',
+      // },
+      // {
+      //   title: 'Spain',
+      //   description: '5678 Lorem Ipsum St, 56789, Madrid',
+      // },
+      // {
+      //   title: 'Australia',
+      //   description: '9012 Lorem Ipsum St, 90123, Sydney',
+      // },
+      {
+        title: 'Canada',
+        description: '1 Kingfisher Way, Whitby, Ontario',
+      },
+    ]}
+  /> -->
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Technical Support"
+    tagline="Contact us"
+    columns={2}
+    items={[
+      {
+        title: 'Chat with us',
+        description:
+          'Send us an email at aarohana.technologies@gmail.com',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Call us',
+        description:
+          'Give us a call (+1) 437-313-2772',
+        icon: 'tabler:headset',
+      },
+    ]}
+  />
+</Layout>
