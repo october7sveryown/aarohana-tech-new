@@ -132,7 +132,7 @@ export const headerData = {
   ],
   actions: [
    // { text: 'Book a call', href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation?month=2024-06', target: '_blank', icon:'tabler:phone' }, 
-    { text: 'Contact us', href: 'phone:+14373132772' }],
+    { text: 'Contact us', href: 'tel:+14373132772' }],
 };
 
 export const footerData = {
