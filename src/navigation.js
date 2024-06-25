@@ -26,7 +26,7 @@ export const headerData = {
     },
     {
       text:'Services',
-      href: '#features',
+      href: '/#features',
     },
     {
       text:'About',
