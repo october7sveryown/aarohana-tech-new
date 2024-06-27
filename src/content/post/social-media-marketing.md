@@ -3,7 +3,7 @@ publishDate: 2024-06-18T00:00:00Z
 author: Yash Thaker
 title: What is Social media marketing & how small businesses can benefit from it?
 excerpt: In this blog, we talk about how social media platforms like Instagram, Tiktok can benefit small businesses. 
-image: https://images.unsplash.com/photo-1516996087931-5ae405802f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+image: [https://images.unsplash.com/photo-1516996087931-5ae405802f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80](https://drive.google.com/file/d/1fQfPsmakvls_F6k4UdUafa4Q1CmXsY3E/view?usp=drive_link)
 category: Blog
 tags:
   - social media
