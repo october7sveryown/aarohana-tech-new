@@ -12,7 +12,7 @@ tags:
 metadata:
   canonical: https://aarohana.tech/supporting-small-businesses-1
 ---
-![image](src/assets/images/earrings.jpg)
+![image](src/assets/images/supportsmallbusiness1.png)
 Hello, I’m Mansi Varun Deshpande, and I’m excited to share my journey with you all. I am a Gujarati girl (Gujarat is located in Western part of India).
 I am from India and now currently settled in Ontario, Canada. I have done my education in Fashion Designing, Gemology & Diamond Grading.
 Before coming to Canada, I was a long time entrepreneur back in India for 10 years. I used to run an unstitched dress materials business as a wholesaler. And a 24/7 housewife too, haha!
