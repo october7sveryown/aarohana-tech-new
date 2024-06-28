@@ -3,7 +3,6 @@ publishDate: 2024-06-18T00:00:00Z
 author: Yash Thaker
 title: What is Social media marketing & how small businesses can benefit from it?
 excerpt: In this blog, we talk about how social media platforms like Instagram, Tiktok can benefit small businesses. 
-image: https://drive.google.com/file/d/1fQfPsmakvls_F6k4UdUafa4Q1CmXsY3E/view?usp=drive_link
 category: Blog
 tags:
   - social media
@@ -11,7 +10,7 @@ tags:
   - instagram
   - tiktok
 metadata:
-  canonical: https://aarohana.tech/what-is-social-media-marketing-and-benefits-for-small-businesses
+  canonical: https://aarohana.tech/social-media-marketing
 ---
 
 In today's digital age, social media marketing has become an essential tool for businesses of all sizes. Social media marketing involves using platforms like Facebook, Instagram, Twitter, LinkedIn, and others to promote products, services, and brands. This form of marketing leverages the vast user bases and powerful targeting capabilities of social media platforms to connect with potential customers, increase brand awareness, and drive sales.
