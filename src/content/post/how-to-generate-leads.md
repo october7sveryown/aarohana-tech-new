@@ -4,6 +4,7 @@ author: Yash Thaker
 title: How to generate leads with organic reach through social media
 excerpt: In this blog, we talk about how you can leverage social media to generate leads.
 category: Blog
+image: '~/assets/images/blog2.png' 
 tags:
   - social media
   - leads generation

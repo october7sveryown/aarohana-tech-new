@@ -4,6 +4,7 @@ author: Yash Thaker
 title: Supporting small businesses - featuring story of Mansi from Moonblushbymansi
 excerpt: In this blog, Mansi unravels her journey behind her Canadian venture - Moonblushbymansi
 category: Blog
+image: '~/assets/images/ssb1.png'
 tags:
   - small business in ontario
   - small business in canada
@@ -14,8 +15,6 @@ metadata:
   description: Mansi shares her inspiring journey of starting Moonblushbymansi, an Indian Ethnic Imitation Jewelry business in Canada. Discover her story and get inspired to support small businesses.
   keywords: small business, Ontario, Canada, support small businesses, MoonblushbyMansi, Indian Ethnic Imitation Jewelry
 ---
-
-![Supporting small businesses](src/assets/images/supportsmallbusiness1.png)
 
 Hello, I’m Mansi Varun Deshpande, and I’m excited to share my journey with you all. I am a Gujarati girl (Gujarati is a language spoken in the western part of India). I am from Pune, Maharashtra, India, and now currently settled in Ontario, Canada. I have done my education in Fashion Designing, Gemology & Diamond Grading. Before coming to Canada, I was a long-time entrepreneur back in India for 10 years. I used to run an unstitched dress materials business as a wholesaler. And a 24/7 housewife too, haha!
 
