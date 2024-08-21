@@ -32,6 +32,7 @@ export const headerData = {
       text:'About',
       href: getPermalink('/about'),
     },
+    
     // {
     //   text:'Contact',
     //   href: getPermalink('/contact'),
@@ -132,7 +133,9 @@ export const headerData = {
   ],
   actions: [
    // { text: 'Book a call', href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation?month=2024-06', target: '_blank', icon:'tabler:phone' }, 
-    { text: 'Contact us', href: 'tel:+14373132772' }],
+    // { text: 'Contact us', href: 'tel:+14373132772' }, 
+    { text: 'Free website audit', href: 'https://forms.gle/NfEzdjxsn3rVTdyv5' }],
+   
 };
 
 export const footerData = {
