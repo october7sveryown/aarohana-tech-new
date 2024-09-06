@@ -35,7 +35,7 @@ export const headerData = {
     {
       text:'Contact',
       href: "mailto:aarohana.technologies@gmail.com"
-    }
+    },
     
     // {
     //   text:'Contact',
