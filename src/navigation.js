@@ -32,6 +32,10 @@ export const headerData = {
       text:'About',
       href: getPermalink('/about'),
     },
+    {
+      text:'Contact',
+      href: "mailto:aarohana.technologies@gmail.com"
+    }
     
     // {
     //   text:'Contact',
@@ -179,6 +183,10 @@ export const footerData = {
         { text: 'Blog', href: '/blog' },
         // { text: 'Contact', href: '/contact' },
         { text: 'Services', href: '#features' },
+        {
+      text:'Contact',
+      href: "mailto:aarohana.technologies@gmail.com"
+        }
       ],
     },
   ],
