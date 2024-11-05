@@ -193,7 +193,7 @@ export const footerData = {
   secondaryLinks: [
     // { text: 'Terms', href: getPermalink('/terms') },
     // { text: 'Privacy Policy', href: getPermalink('/privacy') },
-    { text : 'Grow your business online'}
+    { text : 'Empowering small businesses through AI and digital solutions in Ontario and beyond. Let’s make your vision a reality.'}
   ],
   socialLinks: [
     { ariaLabel: 'Email', icon: 'tabler:mail', href: 'mailto:aarohana.technologies@gmail.com' },

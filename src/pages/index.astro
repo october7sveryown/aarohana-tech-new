@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 
 const metadata = {
   title: 'Aarohana Technologies — No 1 Digital growth agency in Durham, Ontario',
@@ -35,13 +36,13 @@ const metadata = {
     image={{ src: '~/assets/images/hero.svg', alt: 'Hero Image' }}
   >
     <Fragment slot="title">
-     If you can imagine it, 
-      <span class="text-primary dark:text-white highlight"> we can make it</span>
+     Accelerate your business growth 
+      <span class="text-primary dark:text-white highlight">with AI and Digital Innovation</span>
     </Fragment>
     
     <Fragment slot="subtitle">
      
-      We are a creative agency helping businesses grow their online presence!
+      At Aarohana Tech, we empower small businesses with custom digital solutions that streamline operations, enhance customer engagement, and drive measurable growth.
     </Fragment>
   </Hero>
 
@@ -60,13 +61,13 @@ const metadata = {
       {
         title: 'Website Development',
         description:
-          'We build High-performing, fast and SEO powered websites.',
+          'Capture more leads with a high-performance website that reflects your brand, engages visitors, and drives conversions.',
         icon: 'tabler:brand-html5',
       },
       {
         title: 'Social media marketing',
         description:
-          'We help you grow your online presence through social media platforms.',
+          'Expand your reach and grow your online community with tailored social media strategies that build lasting connections with your audience.',
         icon: 'tabler:social',
       },
       {
@@ -78,12 +79,49 @@ const metadata = {
       {
         title: 'AI & Automation Solutions',
         description:
-          'We help you automate your business processes with AI powered solutions.',
+          'Automate repetitive tasks, minimize errors, and free up time with intelligent solutions designed to optimize your business processes.',
         icon: 'tabler:rocket',
       }
     ]}
   />
 
+  <Features2
+    id="features"
+    tagline="Why us"
+    title="Why choose Aarohana Technologies?"
+    subtitle="We're better than all your exes"
+    items={[
+      {
+        title: 'Expertise in Small Business Needs',
+        description:
+          'We understand the unique challenges of small businesses and craft solutions that deliver real results.',
+        icon: 'tabler:checks',
+      },
+      {
+        title: 'Tailored Solutions for Maximum Impact',
+        description:
+          'Each service is customized to align with your goals and challenges.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Transparent, Supportive Partnership',
+        description:
+          'From start to finish, we guide you through every step, ensuring clarity and progress.',
+        icon: 'tabler:hand-love-you',
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Businesses tranformed', amount: '10+' },
+      { title: 'star rated on Google', amount: '5' },
+      { title: 'Years of Experience', amount: '5+' },
+      // { title: '', amount: '48.4K' },
+    ]}
+  />
   <!-- Content Widget **************** -->
 
   <!-- <Content
@@ -205,7 +243,7 @@ const metadata = {
       {
         title: 'Step 1: <span class="font-medium">Book a call</span>',
         description:
-          'Schedule a call with our team to discuss your project requirements and goals.',
+          'We’ll discuss your business goals and explore how we can help.',
         icon: 'tabler:phone',
       },
       {
@@ -227,88 +265,20 @@ const metadata = {
    
   />
 
-  <!-- Features2 Widget ************** -->
 
-  <!-- <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2> -->
-  <!-- Stats Widget ****************** -->
 
-  <Stats
-    stats={[
-      { title: 'Businesses tranformed', amount: '10+' },
-      { title: 'star rated on Google', amount: '5' },
-      { title: 'Websites', amount: '20+' },
-      // { title: '', amount: '48.4K' },
-    ]}
-  />
+
+  
 
   <!-- Testimonial Section -->
-<section class="py-16 bg-blue-50 dark:bg-slate-800">
+<section class="py-16 bg-blue-50">
   <div class="container mx-auto text-center">
-    <h3 class="text-3xl font-bold tracking-tight sm:text-4xl mb-8">What Our Clients Say</h3>
+    <h3 class="text-3xl font-bold tracking-tight sm:text-4xl my-1 text-primary">Success stories</h3>
+    <h5 class="text-lg font-normal text-gray-500 tracking-tight md:text-xl mb-8">Might sound crazy, but it ain't no lie!</h5>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-4 md:mx-0">
 
       <!-- Testimonial Card 1 -->
-      <div class="bg-white p-6 shadow-md rounded-lg">
+      <div class="bg-white p-6 shadow-xl rounded-lg">
         <div class="flex items-center mb-4">
           <div class="mx-auto">
             <h4 class="font-bold text-xl dark:text-primary">Diksha Bhosale</h4>
@@ -319,7 +289,7 @@ const metadata = {
       </div>
 
       <!-- Testimonial Card 2 -->
-      <div class="bg-white p-6 shadow-md rounded-lg">
+      <div class="bg-white p-6 shadow-xl rounded-lg">
         <div class="flex items-center mb-4">
           <div class="mx-auto">
             <h4 class="font-bold text-xl dark:text-primary">Michelle Palmer</h4>
@@ -330,7 +300,7 @@ const metadata = {
       </div>
 
       <!-- Testimonial Card 3 -->
-      <div class="bg-white p-6 shadow-md rounded-lg">
+      <div class="bg-white p-6 shadow-xl rounded-lg">
         <div class="flex items-center mb-4">
           <div class="mx-auto">
             <h4 class="font-bold text-xl dark:text-primary">Connie Gennuso</h4>
@@ -410,7 +380,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Grow your business&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">with us</span>
+      Start the digital revolution&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">with us</span>
     </Fragment>
 
     <Fragment slot="subtitle">
