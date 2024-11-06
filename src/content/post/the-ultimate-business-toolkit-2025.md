@@ -11,7 +11,7 @@ tags:
   - productivity
   - growth strategies
 metadata:
-  canonical: https://aarohana.tech/ultimate-small-business-toolkit
+  canonical: https://aarohana.tech/the-ultimate-small-business-toolkit-2025
 ---
 
 In the rapidly evolving business landscape, having the right tools at your disposal can be the key differentiator between success and stagnation. 
