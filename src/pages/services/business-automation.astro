@@ -1,0 +1,320 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Note from '~/components/widgets/Note.astro';
+
+const metadata = {
+  title: 'Business Automation Services | Aarohana Technologies',
+};
+
+let items = [
+  {
+    name: "Time Saved",
+    value: "40%",
+    desc: "Average time saved by businesses through automation"
+  },
+  {
+    name: "Error Reduction",
+    value: "90%",
+    desc: "Reduction in manual errors through automation"
+  },
+  {
+    name: "ROI",
+    value: "3.5x",
+    desc: "Average return on investment from automation"
+  },
+  {
+    name: "Productivity",
+    value: "65%",
+    desc: "Increase in employee productivity after automation"
+  }
+]
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Free Consultation',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+      { text: 'View Solutions', href: '#solutions' },
+    ]}
+    image={{ src: '~/assets/images/automation-hero.svg', alt: 'Business Automation Services' }}
+  >
+    <Fragment slot="title">
+      Streamline Your Business with 
+      <span class="text-primary dark:text-white highlight">Smart Automation</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Eliminate manual tasks and boost productivity with our no-code automation solutions. We help businesses save time, reduce errors, and focus on what matters most.
+    </Fragment>
+  </Hero>
+
+  <Note />
+
+  <!-- Features Widget -->
+  <Features
+    id="features"
+    tagline="Why Choose Us"
+    title="What Sets Us Apart"
+    subtitle="We deliver practical automation solutions that transform your business operations"
+    items={[
+      {
+        title: 'No-Code Expertise',
+        description: 'Expert implementation of popular no-code tools like Zapier and Make for quick, efficient automation.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Custom Solutions',
+        description: 'Tailored automation workflows designed specifically for your business processes and needs.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Quick Implementation',
+        description: 'Fast deployment of automation solutions with minimal disruption to your business.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Cost Effective',
+        description: 'Affordable automation solutions that deliver quick ROI and long-term cost savings.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Integration Specialists',
+        description: 'Seamless integration with your existing tools and software ecosystem.',
+        icon: 'tabler:puzzle',
+      },
+      {
+        title: 'Ongoing Support',
+        description: 'Continuous monitoring and optimization of your automation workflows.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  />
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="mb-12 text-center">
+        <div class="text-base font-semibold uppercase tracking-wide text-primary">Our Solutions</div>
+        <h2 class="font-heading mb-4 font-bold tracking-tight text-3xl md:text-4xl">Comprehensive Automation Tools</h2>
+        <p class="mx-auto max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+          We leverage powerful no-code platforms to automate your business processes
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Zapier -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 3.5c-.828 0-1.5.672-1.5 1.5v4c0 .828.672 1.5 1.5 1.5s1.5-.672 1.5-1.5V7c0-.828-.672-1.5-1.5-1.5z"/>
+              </svg>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Zapier Automation</h3>
+          </div>
+          <p class="mb-4 text-gray-600 dark:text-slate-400">
+            Connect and automate workflows between 5000+ apps without any coding.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Multi-app workflows</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Custom triggers and actions</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Data transformation</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Error handling & notifications</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Make (Integromat) -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                <path d="M4 4h16v16H4z"/>
+              </svg>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Make (Integromat)</h3>
+          </div>
+          <p class="mb-4 text-gray-600 dark:text-slate-400">
+            Visual automation platform for complex workflows and data processing.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Visual workflow builder</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Advanced data mapping</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Real-time execution</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Complex routing & logic</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Custom Solutions -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Custom Integrations</h3>
+          </div>
+          <p class="mb-4 text-gray-600 dark:text-slate-400">
+            Specialized solutions for unique business requirements and legacy systems.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">API integrations</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Database automation</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Legacy system integration</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Custom webhooks & APIs</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Projects Section -->
+  <Content
+    id="portfolio"
+    isReversed
+    tagline="Success Stories"
+    title="Automation in Action"
+    items={[
+      {
+        title: 'Lead Management Automation',
+        description: 'Automated lead capture from multiple sources to CRM with follow-up sequences',
+      },
+      {
+        title: 'Invoice Processing',
+        description: 'Automated invoice generation, approval, and payment processing workflow',
+      },
+      {
+        title: 'HR Process Automation',
+        description: 'Streamlined employee onboarding and document management system',
+      },
+      {
+        title: 'Customer Support Automation',
+        description: 'Automated ticket routing and response system with AI-powered categorization',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/automation-image.jpg',
+      alt: 'Automation Example',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl text-primary font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Real Business Impact<br /><span class="text-2xl text-gray-700">Automation Success Stories</span>
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Process Steps -->
+  <Steps
+    title="Our Automation Process"
+    items={[
+      {
+        title: 'Process Analysis',
+        description: 'We analyze your current workflows and identify automation opportunities.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Solution Design',
+        description: 'We design the perfect automation solution using the right tools for your needs.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Implementation',
+        description: 'We set up and test the automation workflows with proper documentation.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- Call to Action -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Automating',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Automate Your Business?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Book a free consultation today and discover how automation can transform your business operations.
+    </Fragment>
+  </CallToAction>
+</Layout>

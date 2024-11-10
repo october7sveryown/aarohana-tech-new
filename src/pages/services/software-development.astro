@@ -1,0 +1,324 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Note from '~/components/widgets/Note.astro';
+
+const metadata = {
+  title: 'Software Development Services | Aarohana Technologies',
+};
+
+let items = [
+  {
+    name: "Digital Transformation",
+    value: "87%",
+    desc: "Of companies believe digital will disrupt their industry"
+  },
+  {
+    name: "Mobile Usage",
+    value: "70%",
+    desc: "Of digital media time is spent on mobile devices"
+  },
+  {
+    name: "AI Adoption",
+    value: "35%",
+    desc: "Of companies are currently using AI in their business"
+  },
+  {
+    name: "ROI Impact",
+    value: "4.2x",
+    desc: "Higher revenue for digitally mature organizations"
+  }
+]
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Free Consultation',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+      { text: 'View Our Solutions', href: '#solutions' },
+    ]}
+    image={{ src: '~/assets/images/software-dev-hero.svg', alt: 'Software Development Services' }}
+  >
+    <Fragment slot="title">
+      Transform Your Business with 
+      <span class="text-primary dark:text-white highlight">Custom Software Solutions</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      From mobile apps to AI-powered solutions, we build custom software that drives innovation and growth. Our expert team delivers scalable, secure, and user-friendly applications tailored to your business needs.
+    </Fragment>
+  </Hero>
+
+  <Note />
+
+  <!-- Features Widget -->
+  <Features
+    id="features"
+    tagline="Why Choose Us"
+    title="What Sets Us Apart"
+    subtitle="We deliver more than just code - we create innovative solutions that solve real business challenges"
+    items={[
+      {
+        title: 'Custom Solutions',
+        description: 'Tailored software development that perfectly matches your business requirements and goals.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Modern Technology Stack',
+        description: 'Using the latest technologies and frameworks to build robust and future-proof applications.',
+        icon: 'tabler:stack-2',
+      },
+      {
+        title: 'Agile Development',
+        description: 'Flexible and iterative development process ensuring quick delivery and continuous improvement.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Scalable Architecture',
+        description: 'Building systems that can grow with your business and handle increasing demands.',
+        icon: 'tabler:chart-arrows-vertical',
+      },
+      {
+        title: 'Security Focus',
+        description: 'Implementing robust security measures to protect your data and applications.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Ongoing Support',
+        description: 'Comprehensive maintenance and support to ensure your software runs smoothly.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  />
+
+  <!-- Solutions Section -->
+  <!-- Replace Features3 with this custom Solutions section -->
+<section id="solutions" class="py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="mb-12 text-center">
+        <div class="text-base font-semibold uppercase tracking-wide text-primary">Our Solutions</div>
+        <h2 class="font-heading mb-4 font-bold tracking-tight text-3xl md:text-4xl">Comprehensive Software Development Services</h2>
+        <p class="mx-auto max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+          We offer a wide range of software development services to meet your business needs
+        </p>
+      </div>
+  
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Mobile Apps -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+                <path d="M11 4h2" />
+                <path d="M12 17v.01" />
+              </svg>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Mobile App Development</h3>
+          </div>
+          <p class="mb-4 text-gray-600 dark:text-slate-400">
+            Create powerful native and cross-platform mobile applications that engage users and drive business growth.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Native iOS and Android development</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Cross-platform solutions</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Progressive Web Apps (PWA)</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">App maintenance and updates</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Web Apps -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M3.6 9h16.8" />
+                <path d="M3.6 15h16.8" />
+                <path d="M11.5 3a17 17 0 0 0 0 18" />
+                <path d="M12.5 3a17 17 0 0 1 0 18" />
+              </svg>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Web Applications</h3>
+          </div>
+          <p class="mb-4 text-gray-600 dark:text-slate-400">
+            Build scalable and modern web applications that help streamline your business operations and improve customer engagement.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Custom web applications</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Enterprise software solutions</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Cloud-based applications</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">E-commerce platforms</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- AI & RAG -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 3c1.074 -.424 2.24 -.664 3.464 -.664c2.73 0 5.197 1.09 7 2.86" />
+                <path d="M12 3c-1.074 -.424 -2.24 -.664 -3.464 -.664c-2.73 0 -5.197 1.09 -7 2.86" />
+                <path d="M12 21v-18" />
+              </svg>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">AI & RAG Solutions</h3>
+          </div>
+          <p class="mb-4 text-gray-600 dark:text-slate-400">
+            Leverage the power of artificial intelligence and advanced language models to automate processes and gain valuable insights.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Custom AI models and applications</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Retrieval Augmented Generation (RAG)</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">Intelligent chatbots and assistants</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="ml-2 text-gray-600 dark:text-slate-400">AI-powered analytics and insights</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <div class="py-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl text-center font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Why invest in custom software development?
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
+        {
+          items?.map((stat) => (
+            <div class="relative group">
+              <div class="p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-all">
+                <div class="flex flex-col">
+                  <span class="text-4xl font-bold text-primary mb-2">{stat.value}</span>
+                  <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                    {stat.name}
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {stat.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Process Steps -->
+  <Steps
+    title="Our Development Process"
+    items={[
+      {
+        title: 'Discovery & Planning',
+        description: 'We analyze your requirements and create a detailed development roadmap.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Design & Development',
+        description: 'We build your solution using agile methodology with regular updates and feedback.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Testing & Deployment',
+        description: 'Rigorous testing and smooth deployment with ongoing support and maintenance.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+
+  <!-- Call to Action -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your Project',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Build Your Custom Software Solution?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Book a free consultation today and let's discuss how we can help transform your business with custom software.
+    </Fragment>
+  </CallToAction>

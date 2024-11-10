@@ -1,0 +1,221 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Note from '~/components/widgets/Note.astro';
+
+const metadata = {
+  title: 'Website Development Services | Aarohana Technologies',
+};
+
+let items = [
+{
+      name: "Online Research",
+      value: "81%",
+      desc: "Of consumers research online before making a purchase decision"
+    },
+    {
+      name: "Local Search",
+      value: "97%",
+      desc: "Of people search online to find local businesses"
+    },
+    {
+      name: "Trust Factor",
+      value: "75%",
+      desc: "Of consumers judge business credibility by website design"
+    },
+    {
+      name: "Growth Impact",
+      value: "3.5x",
+      desc: "Faster growth for small businesses with websites"
+    }
+]
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Free Consultation',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+      { text: 'View Our Work', href: '#portfolio' },
+    ]}
+    image={{ src: '~/assets/images/web-dev-hero.svg', alt: 'Web Development Services' }}
+  >
+    <Fragment slot="title">
+      Transform Your Online Presence with 
+      <span class="text-primary dark:text-white highlight">Professional Web Development</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Get a high-performance, custom-built website that drives results. Our expert team combines stunning design with powerful functionality to help your business stand out and succeed online.
+    </Fragment>
+  </Hero>
+ <Note />
+  <!-- Features Widget -->
+  <Features
+    id="features"
+    tagline="Why Choose Us"
+    title="What Sets Us Apart"
+    subtitle="We deliver more than just websites - we create digital experiences that drive business growth"
+    items={[
+      {
+        title: 'Custom Development',
+        description: 'Tailored solutions built specifically for your business needs, ensuring your website stands out from the competition.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Mobile-First Design',
+        description: 'Responsive websites that look and work perfectly on all devices, capturing every potential customer.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'SEO Optimization',
+        description: 'Built-in SEO best practices to help your website rank higher in search results and attract more organic traffic.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Fast Loading Speed',
+        description: 'Optimized performance to ensure your website loads quickly, keeping visitors engaged and improving conversion rates.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Security First',
+        description: 'Advanced security measures to protect your website and your customers\' data from threats.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Ongoing Support',
+        description: 'Dedicated support and maintenance to keep your website running smoothly and up-to-date.',
+        icon: 'tabler:headset',
+      },
+    ]}
+  />
+ 
+  <div class="py-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl text-center font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Why your business should have a website?
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
+        {
+          items?.map((stat) => (
+            <div class="relative group">
+              <div class="p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-all">
+                <div class="flex flex-col">
+                  <span class="text-4xl font-bold text-primary mb-2">{stat.value}</span>
+                  <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                    {stat.name}
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {stat.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Section -->
+  <Content
+    id="portfolio"
+    isReversed
+    tagline="Our Work"
+    title="Recent Success Story"
+    items={[
+      {
+        title: '100% Mobile Friendly',
+        description: '',
+      },
+      {
+        title: 'Free Hosting',
+        description: '',
+      },
+      {
+        title: 'Optimized for high conversions',
+        description: '',
+      },
+      {
+        title: 'Blazing fast speed',
+        description: '',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/portfolio-web.png',
+      alt: 'Portfolio Example',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl text-primary font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Interior Design Business Website<br /><span class="text-2xl text-gray-700">Toronto based business</span>
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Website Cost Calculator -->
+  <div class="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-5b22e804-f44d-483c-bde5-a8290f356153" data-elfsight-app-lazy></div>
+    </div>
+  </div>
+
+
+  
+
+  <!-- Process Steps -->
+  <Steps
+  title="Our Simple Process"
+  items={[
+    {
+      title: 'Plan Together',
+      description: 'We discuss your goals and create a plan that fits your business needs and budget.',
+      icon: 'tabler:bulb',
+    },
+    {
+      title: 'Design & Build',
+      description: 'We create your website with a focus on attracting customers and making it easy to use.',
+      icon: 'tabler:palette',
+    },
+    {
+      title: 'Launch & Support',
+      description: 'We help you go live and provide ongoing support to keep your website running smoothly.',
+      icon: 'tabler:rocket',
+    },
+  ]}
+/>
+
+  <!-- Call to Action -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your Project',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Build Your Dream Website?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Book a free consultation today and let's discuss how we can help your business grow online.
+    </Fragment>
+  </CallToAction>
+</Layout>

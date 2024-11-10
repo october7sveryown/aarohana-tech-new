@@ -1,0 +1,173 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Note from '~/components/widgets/Note.astro';
+
+const metadata = {
+  title: 'Social Media Marketing Services | Aarohana Technologies',
+};
+
+let items = [
+  {
+    name: "Brand Engagement",
+    value: "71%",
+    desc: "Of consumers who have a positive social media experience recommend the brand"
+  },
+  {
+    name: "Purchase Decision",
+    value: "54%",
+    desc: "Of social browsers use social media to research products"
+  },
+  {
+    name: "Lead Generation",
+    value: "78%",
+    desc: "Of salespeople using social media outsell their peers"
+  },
+  {
+    name: "ROI Impact",
+    value: "2.5x",
+    desc: "Higher conversion rates through social media marketing"
+  }
+]
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget -->
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Free Consultation',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+    ]}
+    image={{ src: '~/assets/images/social-media-hero.svg', alt: 'Social Media Marketing Services' }}
+  >
+    <Fragment slot="title">
+      Boost Your Brand Presence with
+      <span class="text-primary dark:text-white highlight">Strategic Social Media Marketing</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Transform your social media presence with our expert management services. We help you build meaningful connections, engage your audience, and drive business growth through strategic social media marketing.
+    </Fragment>
+  </Hero>
+  <!-- <Note /> -->
+
+  <!-- Features Widget -->
+  <Features
+    id="features"
+    tagline="Why Choose Us"
+    title="What Sets Us Apart"
+    subtitle="We deliver more than just posts - we create engaging social media strategies that drive real business results"
+    items={[
+      {
+        title: 'Strategic Planning',
+        description: 'Custom social media strategies aligned with your business goals and target audience.',
+        icon: 'tabler:chess-bishop',
+      },
+      {
+        title: 'Content Creation',
+        description: 'Engaging, brand-aligned content that resonates with your audience and drives engagement.',
+        icon: 'tabler:pencil',
+      },
+      {
+        title: 'Community Management',
+        description: 'Active engagement with your audience to build strong relationships and brand loyalty.',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Analytics & Reporting',
+        description: 'Detailed performance tracking and insights to optimize your social media presence.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Paid Advertising',
+        description: 'Strategic paid campaigns to expand reach and achieve specific marketing objectives.',
+        icon: 'tabler:ad',
+      },
+      {
+        title: 'Brand Monitoring',
+        description: "Continuous monitoring of your brand's social presence and reputation management.",
+        icon: 'tabler:eye',
+      },
+    ]}
+  />
+ 
+  <div class="py-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl text-center font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Why invest in social media marketing?
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-10">
+        {
+          items?.map((stat) => (
+            <div class="relative group">
+              <div class="p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-all">
+                <div class="flex flex-col">
+                  <span class="text-4xl font-bold text-primary mb-2">{stat.value}</span>
+                  <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                    {stat.name}
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {stat.desc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Process Steps -->
+  <Steps
+    title="Our Simple Process"
+    items={[
+      {
+        title: 'Strategy Development',
+        description: 'We analyze your business goals and create a tailored social media strategy.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Content Creation & Management',
+        description: 'We create and manage engaging content that resonates with your audience.',
+        icon: 'tabler:palette',
+      },
+      {
+        title: 'Monitor & Optimize',
+        description: 'We continuously track performance and optimize for better results.',
+        icon: 'tabler:chart-dots',
+      },
+    ]}
+  />
+
+  <!-- Call to Action -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your Project',
+        href: 'https://calendly.com/aarohana-tech-consult/book-a-free-consultation',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Transform Your Social Media Presence?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Book a free consultation today and let's discuss how we can help your business thrive on social media.
+    </Fragment>
+  </CallToAction>
+</Layout>

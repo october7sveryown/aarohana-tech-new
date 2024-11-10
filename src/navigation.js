@@ -26,16 +26,33 @@ export const headerData = {
     },
     {
       text:'Services',
-      href: '/#features',
+      links: [
+        {
+          text: 'Website Development',
+          href: getPermalink('/services/web-development'),
+        },
+        {
+          text: 'Software Development',
+          href: getPermalink('/services/software-development'),
+        },
+        {
+          text: 'Social Media Marketing',
+          href: getPermalink('/services/social-media'),
+        },
+        {
+          text: 'AI & Business Automation',
+          href: getPermalink('/services/business-automation'),
+        }
+      ],
     },
     {
       text:'About',
       href: getPermalink('/about'),
     },
-    {
-      text:'Contact',
-      href: "mailto:aarohana.technologies@gmail.com"
-    },
+    // {
+    //   text:'Contact',
+    //   href: "mailto:aarohana.technologies@gmail.com"
+    // },
     
     // {
     //   text:'Contact',
