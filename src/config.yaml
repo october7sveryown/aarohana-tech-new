@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Aarohana Technologies
-    template: '%s — AstroWind'
+    template: '%s'
   description: "The No.1 Digital agency in Durham, Ontario to grow your business online"
   robots:
     index: true
